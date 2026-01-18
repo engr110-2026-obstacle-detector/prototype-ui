@@ -2,12 +2,12 @@ EnableSwitch enableSwitch;
 int TILT_X=1;
 int TILT_Y=2;
 void rcmdsSetup() {
-  orientation(LANDSCAPE);
+  //orientation(LANDSCAPE); // BREAKS SINE WAVE TONE FOR SOME REASON
   shapeMode(CENTER);
   rectMode(CENTER);
   background(0);
   touchscreen=new Touchscreen();
-  setupAccelerometer();
+  ////setupAccelerometer();
   setupWifiSettingsChanger(width/2, 0);
   udp = new UDP(this);
   udp.listen(true);

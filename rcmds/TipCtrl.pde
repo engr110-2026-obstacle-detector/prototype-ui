@@ -1,11 +1,11 @@
-import ketai.sensors.*;
-KetaiSensor sensor;
+//import ketai.sensors.*;
+//KetaiSensor sensor;
 boolean accelerometerAvail=false;
 float oriXRead, oriYRead, oriZRead;
 void setupAccelerometer() {
   try {
-    sensor = new KetaiSensor(this);
-    sensor.start();
+    //sensor = new KetaiSensor(this);
+    //sensor.start();
     accelerometerAvail=true;
   }
   catch(NoClassDefFoundError e) {
@@ -19,8 +19,8 @@ PVector readTip(PVector v) {
     return v;
   }
 }
-void onGravityEvent(float x, float y, float z) {
-  oriXRead = x;
-  oriYRead = y;
-  oriZRead = z;
-}
+//void onGravityEvent(float x, float y, float z) {
+//  oriXRead = x;
+//  oriYRead = y;
+//  oriZRead = z;
+//}
